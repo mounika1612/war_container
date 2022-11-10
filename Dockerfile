@@ -1,5 +1,5 @@
 FROM tomcat
-WORKDIR /var/lib/jenkins/workspace/War_deploy/webapp/target/webapp.war
+WORKDIR /home/ec2-user/tomcat9/webapps/war_container.war
 EXPOSE 5000
 CMD [ "sh", "-c", "service ssh start; bash"]
 
